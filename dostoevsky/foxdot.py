@@ -1,2 +1,0 @@
-from text_topic_to_txt import data_to_sound
-print(data_to_sound)

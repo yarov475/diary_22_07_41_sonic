@@ -1,8 +1,6 @@
 from tone import results_tone
 import csv
 
-print('results_tone', results_tone)
-
 header = ['positive', 'negative', 'neutral']
 
 positive = []
@@ -26,8 +24,7 @@ for tone in results_tone:
         positive.append(tone['positive'])
     else:
         positive.append(0)
-with open('C:/Users/yayar/OneDrive/Рабочий стол/b2/sonicDataAnalizeYaro/csv/22DataTone.csv', 'w',
-          newline='') as csvfile:
+with open('./csv/22DataTone.csv', 'w', newline='') as csvfile:
     sonic = csv.writer(csvfile, delimiter=',',
                        quotechar='|', quoting=csv.QUOTE_MINIMAL)
 

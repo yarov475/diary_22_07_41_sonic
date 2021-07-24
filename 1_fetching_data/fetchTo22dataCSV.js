@@ -27,7 +27,7 @@ fetch(`https://prozhito.org/api/notes/search?search_type=diaries&date=${date}`)
         }
         return o } )
 .then(function (data){
-    const ws = fs.createWriteStream("C:\\Users\\yayar\\OneDrive\\Рабочий стол\\sonicDataAnalizeYaro\\csv\\22Data.csv");
+    const ws = fs.createWriteStream("..\\csv\\22Data.csv");
     fastcsv
         .write(data, { headers: true })
         .pipe(ws);

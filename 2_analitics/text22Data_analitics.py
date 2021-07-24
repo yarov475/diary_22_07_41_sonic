@@ -5,7 +5,7 @@ from wordcloud import WordCloud
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-paper = pd.read_csv('C:/Users/yayar/OneDrive/Рабочий стол/sonicDataAnalizeYaro/csv/22Data.csv', delimiter=',')
+paper = pd.read_csv('../csv/22Data.csv', delimiter=',')
 
 paper['text_processed'] = \
     paper['text'].map(lambda x: re.sub('[,\.!?]', '', x))
@@ -24,7 +24,7 @@ wordcloud.generate(long_string)
 # Visualize the word cloud
 wordcloud.to_image()
 wordcloud = wordcloud.to_file(
-    'C:/Users/yayar/OneDrive/Рабочий стол/sonicDataAnalizeYaro/img/world_cloud22data_text.png')
-#this show us th stop words
+    '../img/world_cloud22data_text.png')
+
 
 print('world_cloud22data_text.png created in /img')

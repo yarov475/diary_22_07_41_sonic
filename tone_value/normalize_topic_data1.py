@@ -2,9 +2,7 @@ key = []
 key_sep = []
 out = open('prepared_data.py', 'w', encoding='utf8')
 res = []
-a = open(
-    'topic_data1.txt',
-    encoding='utf8').read().split('\'')
+a = open('../txt/topic_data1.txt', encoding='utf8').read().split('\'')
 for i in a:
     if a.index(i) % 2 != 0:
         key.append(i)

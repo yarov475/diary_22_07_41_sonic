@@ -1,15 +1,11 @@
 from text22Data_analitics import paper
-
-
 from tm.utils import simple_preprocess
 import nltk
 
 import tm
 import tm.corpora as corpora
 
-out = open(
-    'C:/Users/yayar/OneDrive/Documents/текст дисертации Ярочкин/публикации/sonicDataAnalizeYaro/dostoevsky/dosroevsky_data/row.txt',
-    'w', encoding='utf8')
+out = open('../txt/row.txt','w', encoding='utf8')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 
@@ -48,7 +44,7 @@ print(corpus[:1][0][:30])
 
 
 
-out1 = open('C:/Users/yayar/OneDrive/Рабочий стол/sonicDataAnalizeYaro/dostoevsky/topic_data1.txt', 'w',
+out1 = open('/tone_value/topic_data1.txt', 'w',
             encoding='utf8')
 # number of topics
 num_topics = 2
