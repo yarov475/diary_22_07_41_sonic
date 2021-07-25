@@ -51,6 +51,7 @@ sonicPi > adsSonicPiMusic.txt вставляем в программу
 
 создаем композицию, обрабатываем в librosa, получаем спектральный анализ
 тона наших данных
+.ipynb_checkpoints> plot_22_full.ipynb ->
 
 ![An image](https://github.com/yarov475/biserGame/blob/master/msc.png)
 
