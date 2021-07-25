@@ -39,8 +39,8 @@ tone value > normalize_topic_data1.py > data_to_sound.py->
 > 22DataToneCsv_creater.py -> 22DataTone.csv
 >text_tone_plot_creater.py
 > topic_tone_plot_creater.py # создаем 2 графика. img/text_tone.png, img/topic_tone.png 
-> ![An image]('../img/text.png')
-> ![An image]('../img/topic.png')
+> ![An image](../img/text.png)
+> ![An image](../img/topic.png)
 
 
 Проверяем то что тему усиливают общую закономерность. Значит темы подобранны верно.
