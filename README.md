@@ -9,7 +9,7 @@
 
 *You can hear the mp3 files on* 
 https://soundcloud.com/yarochkin_sonic 
-![An image](https://github.com/yarov475/biserGame/blob/master/msc.png)
+
 later I'll share the links to articles in the journal.!
 
 
@@ -48,5 +48,10 @@ sonification > adsSonicPiMusic.txt  вставляем в программу -> 
 miditine > midiTime.py > 22midi.mid
 sonicPi > adsSonicPiMusic.txt вставляем в программу
 для быстрого прослушивания csv sonificationSandbox`
+
+создаем композицию, обрабатываем в librosa, получаем спектральный анализ
+тона наших данных
+
+![An image](https://github.com/yarov475/biserGame/blob/master/msc.png)
 
 
