@@ -24,7 +24,7 @@ for tone in results_tone:
         positive.append(tone['positive'])
     else:
         positive.append(0)
-with open('./csv/22DataTone.csv', 'w', newline='') as csvfile:
+with open('../csv/22DataTone.csv', 'w', newline='') as csvfile:
     sonic = csv.writer(csvfile, delimiter=',',
                        quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
