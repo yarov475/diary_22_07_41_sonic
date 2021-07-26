@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\sonic-frontend\public\data\tone_topic_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
