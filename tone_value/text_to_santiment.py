@@ -19,7 +19,7 @@ for tone in results_tone:
     if 'negative' in tone:
         negative.append(tone['negative'])
     else:
-        neutral.append(0)
+        negative.append(0)
     if 'positive' in tone:
         positive.append(tone['positive'])
     else:
