@@ -1,45 +1,28 @@
-`it is a part of my research I try to use music as a means of cognition. for this purpose I use python analytics libraries, for the sound generation, I use ready-to-use solutions in web 22 yp nb> top.pu > app.py > sound-to-data.py > csv to sonic pi and Sonic PI and SuperCollider`
+# Sonification of Eyewitness Accounts of the Great Patriotic War
 
-**Check out a client part at**: https://github.com/yarov475/sonicDataAnalizeYaro_client_prozhito_api
+This project explores the use of sonification as a tool for emotional data exploration. It focuses on diary entries from eyewitnesses of the Great Patriotic War, specifically from June 22, 1941, sourced from prozhito.org. The goal is to transform qualitative emotional data from these historical texts into an auditory experience, allowing for a deeper understanding and emotional engagement with the past.
 
-*You can hear the mp3 files on*
-https://soundcloud.com/yarochkin_sonic
+## Sonification Process
 
-later I'll share the links to articles in the journal.!
+The sonification process involves four main steps:
 
-wish me luck on defending my *Ph.D*
+### 1. Data Selection and Preparation
+The primary data consists of diary entries from June 22, 1941, the first day of the Great Patriotic War. These entries were obtained from [prozhito.org](http://prozhito.org/). Scripts for fetching and preparing this data can be found in the `1_fetching_data/` directory.
 
-*********
+### 2. Qualitative to Quantitative Data Conversion
+To analyze the emotional content of the diary entries, an algorithmic approach is used. The "Dostoevsky" library (see `dostoevsky/` directory) is employed to assess the emotional tone of the text, categorizing segments as negative, neutral, or positive. The script `tone_value/text_to_santiment.py` (likely a typo in the article, assuming it means `sentiment`) is an example of this process. The output of this stage is a table of emotional assessments.
 
-В этом проекте проводится анализ тем текста, эти темы озвучиваются в super Collider затем музыка анализируется и мы
-получаем график. Это герменевтический круг на каждом из витков мы понимаем что-то об исходном тексте.
+### 3. Data Mapping to Sound Parameters
+This step, often referred to as the "mapping problem," involves translating the quantitative emotional data (and potentially other textual features) into sound parameters. These parameters are then used to control sound synthesis in SuperCollider. The SuperCollider script `sonification/superCollider/ful_data_22_algo.scd` exemplifies this mapping process.
 
-В данной работе использлванны материалы дневников прожито. Мы стараемся веделить в них скрытое эмоциональное послание.
-Для этого нам полезна музыка
+### 4. Algorithmic Processing and Sound Generation
+The final sound composition is generated using SuperCollider (sclang), a powerful environment for audio synthesis and algorithmic composition. Prototyping or client interaction might involve tools like `sonification_react_network_client/`, which could be the "twotone" equivalent mentioned in the article, facilitating the exploration of sound design choices.
 
-`из файла requirements.txt установить зависимости python3 -m dostoevsky download fasttext-social-network-model cd
-dostoevsky > git clone https://github.com/bureaucratic-labs/dostoevsky.git
+## Significance
 
-зайти в fetching data/ > npm i fetchingData > node fetchData -> 22Data.csv содержит таблицу с текстами analitics >
-text22data_analitics.py видим облако слов`,![An image](img/world_cloud22data_text.png) `выбираем стопслова ->
-topic_model.txt analitics > topic_model.py #тут формат нам не подходит
+This project demonstrates a novel approach to engaging with historical texts and the emotional experiences they convey. By transforming diary entries into sound, it offers a unique way to:
+- Explore complex emotional data in humanities research.
+- Foster deeper emotional engagement with historical events.
+- Contribute to the preservation of historical memory through innovative means.
 
-tone value > normalize_topic_data1.py > data_to_sound.py->
-> tone.py #create var
-> 22DataToneCsv_creater.py -> 22DataTone.csv
-> text_tone_plot_creater.py
-> topic_tone_plot_creater.py # создаем 2 графика. img/text_tone.png, img/topic_tone.png
-> ![An image](https://github.com/yarov475/diary_22_07_41_sonic/blob/master/img/text.png)
-> ![An image](https://github.com/yarov475/diary_22_07_41_sonic/blob/master/img/topic.png)
-
-
-Проверяем то что тему усиливают общую закономерность. Значит темы подобранны верно. sonification > adsSonicPiMusic.txt
-вставляем в программу -> record miditine > midiTime.py > 22midi.mid sonicPi > adsSonicPiMusic.txt вставляем в программу
-для быстрого прослушивания csv sonificationSandbox`
-
-Создаем композицию, обрабатываем в librosa, получаем спектральный анализ тона наших данных .ipynb_checkpoints>
-plot_22_full.ipynb ->
-
-![An image](https://github.com/yarov475/biserGame/blob/master/msc.png)
-
-
+The sonification of these eyewitness accounts provides a powerful tool for researchers and the public alike to connect with the past on an affective level.

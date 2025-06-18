@@ -1,7 +1,7 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-const date = '1941-07-22'
+const date = '1941-06-22'
 
 let text_str = ''
 let text_arr = []
